@@ -17,7 +17,7 @@ h4 {
 }
 .subContainer > input {
   height: 110%;
-  width: 10%;
+  width: 15%;
   border-radius: 5px;
   padding: 0 0 0 10px;
   border: 2px solid white;
@@ -28,4 +28,9 @@ h4 {
 }
 .result {
   color: greenyellow;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.show {
+  opacity: 1;
 }
