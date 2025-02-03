@@ -1,0 +1,34 @@
+.dropDownContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 150px;
+  height: 100%;
+}
+.dropDownButton {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.dropDownList {
+  border: 2px solid white;
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, max-height 0.3s;
+}
+.dropDownOption {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.active {
+  max-height: 200px;
+  opacity: 1;
+}
+.activeMarker::after {
+  content: "✔";
+}
