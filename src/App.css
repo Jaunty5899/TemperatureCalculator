@@ -26,3 +26,6 @@ h4 {
 .subContainer > button {
   height: 120%;
 }
+.result {
+  color: greenyellow;
+}

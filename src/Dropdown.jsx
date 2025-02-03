@@ -2,9 +2,9 @@ import "./Dropdown.css";
 import { useState } from "react";
 import uuid from "uuid-v4";
 
-export default function Dropdown({ colors }) {
+export default function Dropdown({ colors, setLimits, children }) {
   const [toggle, setToggle] = useState(false);
-  const [choice, setChoice] = useState("Select Option");
+  const [choice, setChoice] = useState(children);
   return (
     <div className="dropDownContainer">
       <div className="dropDownButton" onClick={() => setToggle(true)}>
@@ -19,6 +19,7 @@ export default function Dropdown({ colors }) {
             onClick={() => {
               setChoice(e);
               setToggle(false);
+              setLimits(e);
             }}
           >
             {e}
