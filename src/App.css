@@ -1,0 +1,28 @@
+.container {
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 0 20px 20px 20px;
+  border: 2px solid white;
+  width: 500px;
+}
+h2,
+h4 {
+  width: max-content;
+}
+.subContainer {
+  display: flex;
+  gap: 10px;
+  height: 30px;
+  padding: 15px;
+}
+.subContainer > input {
+  height: 110%;
+  width: 10%;
+  border-radius: 5px;
+  padding: 0 0 0 10px;
+  border: 2px solid white;
+  outline: none;
+}
+.subContainer > button {
+  height: 120%;
+}

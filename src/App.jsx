@@ -1,16 +1,13 @@
-import { useState } from "react";
 import Dropdown from "./Dropdown";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="container">
-      <h1>Temperature Converter</h1>
-      <h2>Enter the temperature, select units and submit</h2>
+      <h2>Temperature Converter</h2>
+      <h4>Enter the temperature, select units and submit</h4>
       <div className="subContainer">
-        <input type="number" placeholder="0.00" />
+        <input type="number" placeholder="0.00" step={0.01} />
         <Dropdown colors={["Celsius", "Fahrenheit", "Kelvin"]}>
           From Unit
         </Dropdown>
